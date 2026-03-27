@@ -1326,3 +1326,13 @@ export default function NovaPulse() {
     </div>
   );
 }
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// This connects your "NovaPulse" component to the <div id="root"> in index.html
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <NovaPulse />
+  </React.StrictMode>
+);
